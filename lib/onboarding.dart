@@ -36,7 +36,33 @@ class _OnboardingState extends State<Onboarding> {
                 child: Container(
                   height: MediaQuery.of(context).size.height*0.3,
                   width: MediaQuery.of(context).size.width,
-                  
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                         width: MediaQuery.of(context).size.width,
+                         height: 50,
+                         color: HexColor('#1A936F'),
+                         child:MaterialButton(onPressed: (){
+         Navigator.pushNamed(context, '/pagetwo');
+        }, child:const Text("LOGIN", style: TextStyle(color: Colors.white,fontSize: 14),) ),
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Container(
+                         width: MediaQuery.of(context).size.width,
+                         height: 50,
+                         decoration: BoxDecoration(
+                           color: HexColor('#E5E5E5'),
+                           borderRadius: BorderRadius.circular(3)
+                         ),
+                         child: MaterialButton(onPressed: (){
+         Navigator.pushNamed(context, '/pageone');
+        }, child: Text("SIGN UP", style: TextStyle(color: HexColor('#114B5F'),fontSize: 14),) ),
+                      )
+                    ],
+                  ),
                 )),
       
             ],
@@ -95,7 +121,7 @@ class _CourselState extends State<Coursel> {
             // print('skipButton pressed');
           },
           child: const Text(
-            "Skip",
+            "",
             style: TextStyle(color: Colors.deepOrangeAccent),
           ),
         ),
@@ -113,11 +139,11 @@ class _CourselState extends State<Coursel> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6),
                   gradient:  LinearGradient(
-                    colors: [HexColor('#1A936F'), HexColor('#1A936F')],
+                    colors: [Colors.transparent],
                   ),
                 ),
                 child: Text(
-                  state.isLastPage ? "LOGIN" :"LOGIN",
+                  state.isLastPage ? "" :"",
                   style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,

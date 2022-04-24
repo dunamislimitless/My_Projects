@@ -29,9 +29,10 @@ class PageTwo extends StatelessWidget {
                         child: Image(image: AssetImage('assets/images/logintop.png'))),
                     ) ),
                     Positioned(
-                      top: 100,
+                      top: 75,
                       right: 0,
                       left: 0,
+                      // bottom: ,
                       child: Container(
                         child: Center(
                           child: Text('VFX LOGISTICS',style:TextStyle(fontSize: 36,fontWeight: FontWeight.bold,color: Colors.white)),
@@ -46,8 +47,8 @@ class PageTwo extends StatelessWidget {
                       child: Container(
                         height: 500,
                         width: 500,
-           child: Image(image: AssetImage('assets/images/im1.png'))),
-                    ) )
+                  child: Image(image: AssetImage('assets/images/im1.png'))),
+                    ),)
                   ],
                 ),
               ),

@@ -77,6 +77,10 @@ const Text("Create an Account", style: TextStyle(fontWeight: FontWeight.bold,fon
 
  
   // create button
+
+  SizedBox(
+    height: 30,
+  ),
   Padding(
     padding: const EdgeInsets.all(10.0),
     child: Container(
@@ -92,19 +96,21 @@ const Text("Create an Account", style: TextStyle(fontWeight: FontWeight.bold,fon
   SizedBox(
     height: 25,
   ),
-  Container(
-    child: Center(
-      child:Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text('Already have an account? '),
-          InkWell(
-            child: Text('Sign in ',style: TextStyle(
-              color: HexColor('#E5E5E5'),
-            ),),
-          )
-        ],
-      )
+  Center(
+    child: Container(
+      child: Center(
+        child:Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('   Already have an account? '),
+            InkWell(
+              child: Text('Sign in ',style: TextStyle(
+                color: HexColor('#E5E5E5'),
+              ),),
+            )
+          ],
+        )
+      ),
     ),
   )
 //const Text("Already have an Account", style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'montserat' , fontSize: 18),)
