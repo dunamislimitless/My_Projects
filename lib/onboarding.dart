@@ -42,13 +42,17 @@ class _OnboardingState extends State<Onboarding> {
                       Container(
                          width: MediaQuery.of(context).size.width,
                          height: 50,
-                         color: HexColor('#1A936F'),
+                         decoration: BoxDecoration(color: HexColor('#1A936F'),
+                           borderRadius: BorderRadius.circular(3),
+                            ),
+                        //  jjkjjkjkjkjjjk
                          child:MaterialButton(onPressed: (){
          Navigator.pushNamed(context, '/pagetwo');
-        }, child:const Text("LOGIN", style: TextStyle(color: Colors.white,fontSize: 14),) ),
+        }, child:const Text("LOGIN", style: TextStyle(color: Colors.white,fontSize: 14,),) ),
                       ),
                       SizedBox(
                         height: 30,
+                        //bbn
                       ),
                       Container(
                          width: MediaQuery.of(context).size.width,
@@ -63,7 +67,7 @@ class _OnboardingState extends State<Onboarding> {
                       )
                     ],
                   ),
-                )),
+              )),
       
             ],
           ),
