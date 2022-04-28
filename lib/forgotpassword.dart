@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class ForgotPassword extends StatelessWidget {
   const ForgotPassword({Key? key}) : super(key: key);
@@ -7,7 +6,7 @@ class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor('#E5E5E5'),
+      backgroundColor: const Color(0XFFE5E5E5),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -22,7 +21,7 @@ class ForgotPassword extends StatelessWidget {
                   height: 80,
                   width: 160,
                   child: const Image(
-                    image: const AssetImage('assets/images/logintop.png'),
+                    image: AssetImage('assets/images/logintop.png'),
                   ),
                 ),
               ),
@@ -44,7 +43,7 @@ class ForgotPassword extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 child: const Text(
                   'Please, enter your registered phone number or email to reset your password.',
-                  style: const TextStyle(color: Colors.black, fontSize: 14),
+                  style: TextStyle(color: Colors.black, fontSize: 14),
                 ),
               ),
               const SizedBox(
