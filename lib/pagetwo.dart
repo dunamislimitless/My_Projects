@@ -6,7 +6,7 @@ class PageTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(26, 147, 111, 4),
+      backgroundColor: const Color(0xFF167A5C),
       body: SafeArea(
         child: Stack(
           children: [

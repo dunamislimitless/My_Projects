@@ -53,14 +53,16 @@ class ForgotPassword extends StatelessWidget {
                 height: 50,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(3)),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(3),
+                ),
                 child: Center(
                   child: TextFormField(
                     decoration: const InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Phone Number or Email',
-                        hintStyle: TextStyle(color: Colors.grey)),
+                      border: InputBorder.none,
+                      hintText: 'Phone Number or Email',
+                      hintStyle: TextStyle(color: Colors.grey),
+                    ),
                   ),
                 ),
               ),
@@ -71,14 +73,18 @@ class ForgotPassword extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                    color: Color.fromRGBO(26, 147, 111, 4),
-                    borderRadius: BorderRadius.all(Radius.circular(10))),
+                  color: Color.fromRGBO(26, 147, 111, 4),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                ),
                 child: MaterialButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "RESET",
-                      style: TextStyle(color: Colors.white, fontSize: 14),
-                    )),
+                  onPressed: () {},
+                  child: const Text(
+                    "RESET",
+                    style: TextStyle(color: Colors.white, fontSize: 14),
+                  ),
+                ),
               ),
             ],
           ),

@@ -6,6 +6,7 @@ class SamuelHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         elevation: 0.0,
         leading: IconButton(
@@ -38,41 +39,58 @@ class SamuelHomePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        children: [
-                          RichText(
-                            text: const TextSpan(
-                              text: "Track\n",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: "your ",
-                                  style: TextStyle(
-                                    fontSize: 24,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: "Shipment",
-                                  style: TextStyle(
-                                    fontSize: 24,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        RichText(
+                          text: const TextSpan(
+                            text: "Track\n",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
                             ),
+                            children: [
+                              TextSpan(
+                                text: "your ",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: "Shipment",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
                           ),
-                          Image.asset("assets/bigmast.png"),
-                        ],
-                      ),
+                        ),
+                        const Spacer(),
+                        Container(
+                          margin: const EdgeInsets.only(bottom: 55),
+                          child: Image.asset(
+                            "assets/images/bigmast.png",
+                            height: 43,
+                            width: 64,
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(
+                            bottom: 15,
+                            top: 10,
+                          ),
+                          child: Image.asset(
+                            "assets/images/bigmast.png",
+                            height: 69,
+                            width: 102,
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 45),
                     Row(
