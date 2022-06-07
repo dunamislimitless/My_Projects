@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_onboard/flutter_onboard.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -42,7 +40,7 @@ class _OnboardingState extends State<Onboarding> {
                           width: MediaQuery.of(context).size.width,
                           height: 50,
                           decoration: BoxDecoration(
-                            color: HexColor('#1A936F'),
+                            color: const Color(0XFF1A936F),
                             borderRadius: BorderRadius.circular(3),
                           ),
                           //  jjkjjkjkjkjjjk
@@ -66,16 +64,16 @@ class _OnboardingState extends State<Onboarding> {
                           width: MediaQuery.of(context).size.width,
                           height: 50,
                           decoration: BoxDecoration(
-                              color: HexColor('#E5E5E5'),
+                              color: const Color(0XFFE5E5E5),
                               borderRadius: BorderRadius.circular(3)),
                           child: MaterialButton(
                               onPressed: () {
                                 Navigator.pushNamed(context, '/pageone');
                               },
-                              child: Text(
+                              child: const Text(
                                 "SIGN UP",
                                 style: TextStyle(
-                                    color: HexColor('#114B5F'), fontSize: 14),
+                                    color: Color(0XFF114B5F), fontSize: 14),
                               )),
                         )
                       ],
@@ -114,8 +112,8 @@ class _CourselState extends State<Coursel> {
           // print('done tapped');
         },
         onBoardData: onBoardData,
-        titleStyles: TextStyle(
-          color: HexColor('#666666'),
+        titleStyles: const TextStyle(
+          color: Color(0XFF666666),
           fontSize: 17,
           fontWeight: FontWeight.w600,
           letterSpacing: 0.15,
@@ -124,10 +122,10 @@ class _CourselState extends State<Coursel> {
         //   fontSize: 16,
         //   color: Colors.brown.shade300,
         // ),
-        pageIndicatorStyle: PageIndicatorStyle(
+        pageIndicatorStyle: const PageIndicatorStyle(
           width: 100,
-          inactiveColor: HexColor('#1A936F'),
-          activeColor: HexColor('#1A936F'),
+          inactiveColor: Color(0XFF1A936F),
+          activeColor: Color(0XFF1A936F),
           inactiveSize: Size(8, 8),
           activeSize: Size(12, 12),
         ),

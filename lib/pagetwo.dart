@@ -18,18 +18,19 @@ class PageTwo extends StatelessWidget {
                 child: Stack(
                   children: [
                     Positioned(
-                        top: 12,
-                        right: 0,
-                        left: 0,
-                        child: Center(
-                          child: Container(
-                            height: 56,
-                            width: 100,
-                            child: const Image(
-                              image: AssetImage('assets/images/logintop.png'),
-                            ),
+                      top: 12,
+                      right: 0,
+                      left: 0,
+                      child: Center(
+                        child: Container(
+                          height: 56,
+                          width: 100,
+                          child: const Image(
+                            image: AssetImage('assets/images/logintop.png'),
                           ),
-                        )),
+                        ),
+                      ),
+                    ),
                     Positioned(
                       top: 75,
                       right: 0,
@@ -37,11 +38,13 @@ class PageTwo extends StatelessWidget {
                       // bottom: ,
                       child: Container(
                         child: const Center(
-                          child: Text('VFX LOGISTICS',
-                              style: TextStyle(
-                                  fontSize: 36,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white)),
+                          child: Text(
+                            'VFX LOGISTICS',
+                            style: TextStyle(
+                                fontSize: 36,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
@@ -67,9 +70,9 @@ class PageTwo extends StatelessWidget {
               child: Container(
                 height: MediaQuery.of(context).size.height * 0.4,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0XFFFAFAFA),
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
                   ),
@@ -96,7 +99,7 @@ class PageTwo extends StatelessWidget {
                       Container(
                         height: 50,
                         width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(color: Colors.white),
+                        decoration: const BoxDecoration(color: Colors.white),
                         child: Center(
                           child: TextFormField(
                             decoration: const InputDecoration(
@@ -107,7 +110,7 @@ class PageTwo extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
                       Container(
@@ -118,7 +121,7 @@ class PageTwo extends StatelessWidget {
                             borderRadius: BorderRadius.circular(3)),
                         child: Center(
                           child: TextFormField(
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               border: InputBorder.none,
                               hintText: 'Password',
                               hintStyle: TextStyle(color: Colors.grey),
@@ -145,7 +148,7 @@ class PageTwo extends StatelessWidget {
                             ),
                             InkWell(
                               onTap: () {},
-                              child: Text(
+                              child: const Text(
                                 'Sign up',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -169,14 +172,14 @@ class PageTwo extends StatelessWidget {
                           ),
                         ),
                         child: MaterialButton(
-                            onPressed: () {
-                              Navigator.pushNamed(context, '/home');
-                            },
-                            child: const Text(
-                              "LOGIN",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 14),
-                            )),
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/home');
+                          },
+                          child: const Text(
+                            "LOGIN",
+                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          ),
+                        ),
                       ),
                     ],
                   ),
