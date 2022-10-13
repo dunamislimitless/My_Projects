@@ -43,7 +43,6 @@ class _OnboardingState extends State<Onboarding> {
                             color: const Color(0XFF1A936F),
                             borderRadius: BorderRadius.circular(3),
                           ),
-                          //  jjkjjkjkjkjjjk
                           child: MaterialButton(
                               onPressed: () {
                                 Navigator.pushNamed(context, '/pagetwo');
@@ -58,7 +57,6 @@ class _OnboardingState extends State<Onboarding> {
                         ),
                         SizedBox(
                           height: 30,
-                          //bbn
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width,
