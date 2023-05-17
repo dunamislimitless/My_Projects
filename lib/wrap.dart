@@ -20,12 +20,12 @@ class _WrapperRouteState extends State<WrapperRoute> {
       debugShowCheckedModeBanner: false,
       initialRoute: '/splash',
       routes: {
-        '/splash': (context) => Splash(),
-        '/onboarding': (context) => Onboarding(),
-        '/pageone': (context) => PageOne(),
-        '/pagetwo': (context) => PageTwo(),
-        '/forgotpassword': (context) => ForgotPassword(),
-        '/home': (context) => SamuelHomePage(),
+        '/splash': (context) => const Splash(),
+        '/onboarding': (context) => const Onboarding(),
+        '/pageone': (context) => const PageOne(),
+        '/pagetwo': (context) => const PageTwo(),
+        '/forgotpassword': (context) => const ForgotPassword(),
+        '/home': (context) => const SamuelHomePage(),
       },
     );
   }

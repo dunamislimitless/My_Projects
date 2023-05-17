@@ -140,7 +140,9 @@ class PageOne extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('   Already have an account? '),
+                    InkWell(
+                      child: Text(' Already have an account? '),
+                    ),
                     InkWell(
                       child: Text(
                         'Sign in ',

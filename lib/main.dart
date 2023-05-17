@@ -3,8 +3,7 @@ import 'package:my_project/pageone.dart';
 import 'package:my_project/wrap.dart';
 
 void main() {
-  
-  runApp(const MyApp( ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,10 +12,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-       debugShowCheckedModeBanner: false,
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: WrapperRoute(),
     );
   }
 }
-
